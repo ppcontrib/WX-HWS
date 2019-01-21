@@ -1,0 +1,3 @@
+[CumulusRealTime]
+    filename = /var/www/html/weewx/realtime.txt
+    unit_system = METRIC    # options are US, METRIC, METRICWX
