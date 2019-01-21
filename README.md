@@ -8,6 +8,10 @@ and is only supporting Meteobridge/Meteobridge NANO-SD versions of the HWS templ
 This version requires weeWX software with the CRT extension for data feeds for the conditions 
 from your personal weather station.  weeWX is available at http://weewx.com
 
+# Weather Underground
+
+* Towards the end of 2018 Weather Underground anounced that it was ending its free API. Earlier versions of this template relied upon this facility for data that users had freely supplied Weather Underground to drive the pop-up data charts. It is still very unclear what the future situation may look like. With this in mind, this new version of the template allows users to select whether thay opt to continue using Weather Underground or retrieve that same data from their own weeWX database. That choice is may through the easyweathersetup page (settings from the menu). Additional configurations need to be made in weeWX; full instructions on how to do this will be found in the ARCHIVE-CHARTS-SETUP-GUIDE. You can see these charts working at https://claydonsweather.org.uk
+
 # Setup
 
 * Follow the instructions in the quick setup guide to install the template.
