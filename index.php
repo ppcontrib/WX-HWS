@@ -176,7 +176,7 @@ else echo '<br><br><a href="https://weather34.com/homeweatherstation/" title="ht
 
 <div class=footertext>
 <?php echo $info?>Source:<?php echo $mbplatform;?> (<?php echo $weather["swversion"];echo "-",$weather["version"]." Template:&nbsp;<oblue>".$templateversion?></oblue>)&nbsp;
-<?php echo $info;?>Hardware:&nbsp;<?php echo $weatherhardware;?><br><?php echo $info;?> Maintained by <a href="mailto:steepleian@gmail.com">Steepleian <a href="https://github.com/steepleian/weather34-Home-Weatherstation-Template-weeWX-adapted" title="https://github.com/steepleian/weather34-Home-Weatherstation-Template-weeWX-adapted">
+<?php echo $info;?>Hardware:&nbsp;<?php echo $weatherhardware;?><br><?php echo $info;?> Maintained by <a href="mailto:steepleian@gmail.com">Steepleian <a href="https://github.com/steepleian/WX-HWS-master" title="https://github.com/steepleian/WX-HWS-master">
 at Github &nbsp; <img src="img/flags/<?php echo $flag ;?>.svg" width="20px" ><?php 
 if (isset($personalmessage) and trim($personalmessage) <> '') {echo '<br />'.$personalmessage;}
 ?></div></div></div>
