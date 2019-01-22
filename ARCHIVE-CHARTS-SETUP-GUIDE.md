@@ -12,19 +12,19 @@
 	       [[[DAILYCHARTS]]]
 	            encoding = strict_ascii	
                     template = wxchartdata/DDMMYYYY.csv.tmpl
-                    HTML_ROOT = /var/www/html
+                    HTML_ROOT = /var/www/html/weewx
 
         # Reports that summarize "by month"
                 [[[MONTHLYCHARTS]]]
                     encoding = strict_ascii
                     template = wxchartdata/MMYYYY.csv.tmpl
-                    HTML_ROOT = /var/www/html
+                    HTML_ROOT = /var/www/html/weewx
 
         # Reports that summarize "by year"
                 [[[YEARLYCHARTS]]]
                     encoding = strict_ascii
                     template = wxchartdata/YYYY.csv.tmpl
-                    HTML_ROOT = /var/www/html
+                    HTML_ROOT = /var/www/html/weewx
 
 * In the download you will find a folder called 'copy_folder_inside_to_skins_Standard_folder'. Inside is a folder called 'wxchartdata'. Move  or copy 'wxchartdata' to your skins/Standard folder.
 
