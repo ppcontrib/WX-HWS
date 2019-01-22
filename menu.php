@@ -60,8 +60,8 @@ else echo "";?>
      '?>
      <?php //do not remove this and if so no support is given and your domain will be blacklisted it is not much to ask //?>
      <li><a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank"><?php echo $info;?> Designed by weather34.com</a></li>
-     <li><a href="https://github.com/ktrue/CU-HWS" title="Maintained on GitHub.com by Saratoga-weather.org"
-     target="_blank"><?php echo $info;?> Download Cumulus HWS</a></li> 
+     <li><a href="https://github.com/steepleian/WX-HWS-master" title="Maintained on GitHub.com by steepleian@gmail.com"
+     target="_blank"><?php echo $info;?> Download weeWX HWS</a></li> 
  </div>
 
 </div></div></div></div></div></div></div></div></div></div></header>  
