@@ -36,7 +36,7 @@
 	var dataPoints2 = [];
 	$.ajax({
 			type: "GET",
-			url: "chartsweewxdata/<?php echo $weatherfile;?>.csv",
+			url: "/weewx/wxchardata/<?php echo $weatherfile;?>.csv",
 			dataType: "text",
 			cache:false,
 			success: function(data) {processData1(data),processData2(data);}
