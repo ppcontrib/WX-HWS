@@ -1,10 +1,10 @@
-# HOW TO USE THE WEEWX ARCHIVE DATABASE TO GENERATE THE POP-UP CanvasJS CHARTS [version WX-HWS-master only].
+# HOW TO USE THE WEEWX ARCHIVE DATABASE TO GENERATE THE POP-UP CanvasJS CHARTS.
 
-Please familiarise yourself with the location of your weewx.conf and Standard/skin.conf files. For a DEB installation without any modification these will be found at '/etc/weewx/weewx.conf' and '/etc/weewx/skins/Standard/skin.conf' respectively. You might find your 'skins' folder in your web root if you followed an earlier version of this guide.
+* Please familiarise yourself with the location of your weewx.conf and Standard/skin.conf files. For a DEB installation without any modification these will be found at '/etc/weewx/weewx.conf' and '/etc/weewx/skins/Standard/skin.conf' respectively. You might find your 'skins' folder in your web root if you followed an earlier version of this guide.
 
-Open the skin.conf file and find the '[CheetahGenerator]' section. At the bottom of this section append the following: -
+* Open the skin.conf file and find the '[CheetahGenerator]' section. At the bottom of this section append the following: -
 
-copy and paste
+(copy and paste)
 
 	   
 	   [[WXCHARTDATA]]
@@ -26,7 +26,7 @@ copy and paste
                     template = wxchartdata/YYYY.csv.tmpl
                     HTML_ROOT = /var/www/html
 
-In the download you will find a folder called 'copy_folder_inside_to_skins_Standard_folder'. Inside is a folder called 'wxchartdata'. Move  or copy 'wxchartdata' to your skins/Standard folder.
+* In the download you will find a folder called 'copy_folder_inside_to_skins_Standard_folder'. Inside is a folder called 'wxchartdata'. Move  or copy 'wxchartdata' to your skins/Standard folder.
 
 
 # IMPORTANT
