@@ -30,6 +30,6 @@
 
 
 # IMPORTANT
-Please ensure that your [Groups] settings in the [Units] section are identical in both your weewx.conf file and skins.conf file.
+* Please ensure that your [Groups] settings in the [Units] section are identical in both your weewx.conf file and skins.conf file.
 
-Once complete and everyting is saved, please restart weeWX.
+* Once complete and everyting is saved, please restart weeWX.
