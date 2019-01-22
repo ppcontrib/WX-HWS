@@ -4,24 +4,27 @@ Please familiarise yourself with the location of your weewx.conf and Standard/sk
 
 Open the skin.conf file and find the '[CheetahGenerator]' section. At the bottom of this section append the following: -
 
-[[WX-HWS_CHARTS]]
-	
-	    [[[DAILYCHARTS]]]
-	        encoding = strict_ascii	
-                template = wxchartdata/DDMMYYYY.csv.tmpl
-                HTML_ROOT = /var/www/html
+copy and paste
+
+	   
+	   [[WXCHARTDATA]]
+	   
+	       [[[DAILYCHARTS]]]
+	            encoding = strict_ascii	
+                    template = wxchartdata/DDMMYYYY.csv.tmpl
+                    HTML_ROOT = /var/www/html
 
         # Reports that summarize "by month"
-            [[[MONTHLYCHARTS]]]
-                encoding = strict_ascii
-                template = wxchartdata/MMYYYY.csv.tmpl
-                HTML_ROOT = /var/www/html
+                [[[MONTHLYCHARTS]]]
+                    encoding = strict_ascii
+                    template = wxchartdata/MMYYYY.csv.tmpl
+                    HTML_ROOT = /var/www/html
 
         # Reports that summarize "by year"
-            [[[YEARLYCHARTS]]]
-                encoding = strict_ascii
-                template = wxchartdata/YYYY.csv.tmpl
-                HTML_ROOT = /var/www/html
+                [[[YEARLYCHARTS]]]
+                    encoding = strict_ascii
+                    template = wxchartdata/YYYY.csv.tmpl
+                    HTML_ROOT = /var/www/html
 
 In the download you will find a folder called 'copy_folder_inside_to_skins_Standard_folder'. Inside is a folder called 'wxchartdata'. Move  or copy 'wxchartdata' to your skins/Standard folder.
 
