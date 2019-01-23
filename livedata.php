@@ -233,8 +233,8 @@ if ($rainunit != $weather["rain_units"]) {
 
 // Convert pressure units if necessary
 if ($pressureunit != $weather["barometer_units"]) {
-	if (($pressureunit == 'hPa' && $weather["barometer_units"] == 'mb') ||
-		($pressureunit == 'mb' && $weather["barometer_units"] == 'hPa')) {
+	if (($pressureunit == 'hPa' && $weather["barometer_units"] == 'hPa') ||
+		($pressureunit == 'mb' && $weather["barometer_units"] == 'mb')) {
 		// 1 mb = 1 hPa so just change the unit being displayed
 		$weather["barometer_units"] = $pressureunit;
 	}
