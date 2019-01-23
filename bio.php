@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="collection:data">
                                         <h3>Template Download</h3>
-                                        <a href="https://github.com/ktrue/CU-HWS/archive/master.zip" target="_blank">CU-HWS-master.zip</a>
+                                        <a href="https://github.com/steepleian/WX-HWS/archive/master.zip" target="_blank">WX-HWS-master.zip</a>
                                     </div>
                                 </div>
                             </a>
