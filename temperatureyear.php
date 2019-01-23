@@ -1,56 +1,44 @@
 <?php include('livedata.php');header('Content-type: text/html; charset=utf-8');date_default_timezone_set($TZ);?>
-<body>
-<div class="yesterdaymax">
-<?php 
- //weather34 temperture min year
- 
-if ($weather["temp_units"]=='C' && $weather["tempymin"]>15){
-echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Min</div><yellow>", $weather["tempymin"] ;
-echo "</yellow><spanewind2><blue> ".$weatherunitc."</blue><windyeartimemax> ".$weather["tempymintime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; } 
- 
-else if ($weather["temp_units"]=='C' && $weather["tempymin"]>10){
-echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Min</div><ogreen>", $weather["tempymin"] ;
-echo "</ogreen><spanewind2><blue> ".$weatherunitc."</blue><windyeartimemax> ".$weather["tempymintime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
+<div class="topmin">
+<?php //temperture min year
+ if ($weather["temp_units"]=='C' && $weather["tempymin"]>30){echo "<topred1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymin"]>=24){echo "<toporange1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymin"]>18){echo "<topyellow1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymin"]>12){echo "<topyellow2>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymin"]>=10){ echo "<topgreen1>", $weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymin"]>-50){ echo "<topblue1>", $weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ //non metric
+ if ($weather["temp_units"]=='F' && $weather["tempymin"]>86){echo "<topred1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymin"]>=75){echo "<toporange1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymin"]>=64){echo "<topyellow1>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymin"]>53.6){echo "<topyellow2>",$weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymin"]>=42.8){ echo "<topgreen1>", $weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymin"]>-50){ echo "<topblue1>", $weather["tempymin"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ ?>
+</div></smalluvunit>
 
-else if ($weather["temp_units"]=='C' && $weather["tempymin"]>-50){
-echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Min</div><oblue>", $weather["tempymin"] ;
-echo "</oblue><spanewind2><blue> ".$weatherunitc."</blue><windyeartimemax> ".$weather["tempymintime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
+<div class="yearwordbig"><?php echo date('Y')?></div>
 
 
-if ($weather["temp_units"]=='F'){
-echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Min</div><oblue>", $weather["tempymin"] ;
-echo "</oblue><spanewind2><blue> ".$weatherunitf."</blue><windyeartimemax> ".$weather["tempymintime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
-
- 
- 
-?>
-</div></div>
-<div class="yesterdaymin">
-<?php 
- //weather34 temperture max year
- if ($weather["temp_units"]=='C' && $weather["tempymax"]>30){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><ored>", $weather["tempymax"] ;
- echo "</ored><spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
- 
- else if ($weather["temp_units"]=='C' && $weather["tempymax"]>20){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><oorange>", $weather["tempymax"] ;
- echo "</oorange><spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
- 
- else if ($weather["temp_units"]=='C' && $weather["tempymax"]>15){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><yellow>", $weather["tempymax"] ;
- echo "</yellow><spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
- 
- else if ($weather["temp_units"]=='C' && $weather["tempymax"]>10){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><ogreen>", $weather["tempymax"] ;
- echo "</ogreen><spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
- 
- else if ($weather["temp_units"]=='C' && $weather["tempymax"]>-50){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><blue>", $weather["tempymax"] ;
- echo "<spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
-
-if ($weather["temp_units"]=='F'){
- echo "<div class=\"circleyestemperature\"><div class='maxyesterday'>Max</div><ored>", $weather["tempymax"] ;
- echo "</oblue><spanewind2><orange> ".$weatherunitc."</orange><windyeartimemax> ".$weather["tempymaxtime2"]."</windyeartimemax></spanewind2> </div><div class='yesterdaytempword'> Temp</div>" ; }
-
-?>
-</div>
+<div class="minword">Min</div></div>
+<div class="mintimedate"><?php echo $weather["tempymintime2"]?>
+</div>  
+<div class="topmax">
+<?php //temperture max year celsius
+ if ($weather["temp_units"]=='C' && $weather["tempmmax"]>30){echo "<topred1>",$weather["tempmmax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>=24){echo "<toporange1>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>18){echo "<topyellow1>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>12){echo "<topyellow2>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>=10){ echo "<topgreen1>", $weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='C' && $weather["tempymax"]>-50){ echo "<topblue1>", $weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+  //non metric
+ if ($weather["temp_units"]=='F' && $weather["tempmmax"]>86){echo "<topred1>",$weather["tempmmax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymax"]>=75){echo "<toporange1>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymax"]>=64){echo "<topyellow1>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymax"]>53.6){echo "<topyellow2>",$weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymax"]>=42.8){ echo "<topgreen1>", $weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ else if ($weather["temp_units"]=='F' && $weather["tempymax"]>-50){ echo "<topblue1>", $weather["tempymax"]  ;echo "&deg;<smalluvunit>".$weather["temp_units"] ; }
+ ?>
+</div></smalluvunit>
+<div class="maxword">Max</div></div>
+<div class="maxtimedate"><?php echo $weather["tempymaxtime2"]?></oorange></div> 
