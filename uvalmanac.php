@@ -21,6 +21,15 @@ actual{font-size:13px;float:right;position:absolute;left:125px;top:20px;-webkit-
 windgusts{position:absolute;font-size:15px;margin-top:20px;left:50px;color:#444}.hitempy{background:rgba(86, 95, 103, 0.4);color:#aaa;font-size:12px;width:220px;padding:3px;border-radius:4px;margin-top:0;margin-left:5px;}
 .weather34chart-btn.close:after,.weather34chart-btn.close:before{color:#ccc;position:absolute;font-size:14px;font-family:Arial,Helvetica,sans-serif;font-weight:600}.weather34browser-header{flex-basis:auto;height:35px;background:#ebebeb;background:0;border-bottom:0;display:flex;margin-top:-20px;width:100%;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-moz-border-radius-topleft:5px;-moz-border-radius-topright:5px;border-top-left-radius:5px;border-top-right-radius:5px}.weather34browser-footer{flex-basis:auto;height:35px;background:#ebebeb;background:rgba(56,56,60,1);border-bottom:0;display:flex;bottom:-20px;width:97.4%;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.weather34chart-btns{position:absolute;height:35px;display:inline-block;padding:0 10px;line-height:38px;width:55px;flex-basis:auto;top:5px}.weather34chart-btn{width:14px;height:14px;border:1px solid rgba(0,0,0,.15);border-radius:6px;display:inline-block;margin:1px}.weather34chart-btn.close{background-color: rgba(255, 124, 57, 1.000)}.weather34chart-btn.close:before{content:"x";margin-top:-14px;margin-left:2px}.weather34chart-btn.close:after{content:"close window";margin-top:-13px;margin-left:15px;width:300px}a{color:#aaa;text-decoration:none}
 .weather34darkbrowser{position:relative;background:0;width:104%;max-height:30px;margin:auto;margin-top:-15px;margin-left:-20px;border-top-left-radius:5px;border-top-right-radius:5px;padding-top:45px;background-image:radial-gradient(circle,#EB7061 6px,transparent 8px),radial-gradient(circle,#F5D160 6px,transparent 8px),radial-gradient(circle,#81D982 6px,transparent 8px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),radial-gradient(circle,rgba(97,106,114,1) 2px,transparent 2px),linear-gradient(to bottom,rgba(59,60,63,0.4) 40px,transparent 0);background-position:left top,left top,left top,right top,right top,right top,0 0;background-size:50px 45px,90px 45px,130px 45px,50px 30px,50px 45px,50px 60px,100%;background-repeat:no-repeat,no-repeat}.weather34darkbrowser[url]:after{content:attr(url);color:#aaa;font-size:14px;position:absolute;left:0;right:0;top:0;padding:2px 15px;margin:11px 50px 0 90px;border-radius:3px;background:rgba(97, 106, 114, 0.3);height:20px;box-sizing:border-box}
+
+.uvcontainer1{left:70px;top:0}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-family:weathertext,Arial,Helvetica,system;width:7rem;height:5.5rem;-webkit-border-radius:3px;-moz-border-radius:3px;-o-border-radius:3px;display:flex}.uvtoday1,.uvtoday1-3,.uvtoday11,.uvtoday4-5,.uvtoday6-8,.uvtoday9-10{font-size:2.5rem;padding-top:2px;color:#fff;border-bottom:15px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px;margin-bottom:10px;}
+.uvcaution,.uvtrend{position:absolute;font-size:1rem}
+.uvtoday1,.uvtoday1-3{background:#9aba2f}.uvtoday4-5{background:rgba(230,161,65,1)}.uvtoday6-8{background:rgba(255,124,57,.8)}.uvtoday9-10{background:rgba(211,93,78,.8)}.uvtoday11{background:rgba(204,135,248,.7)}
+.uvcaution{margin-left:120px;margin-top:112px;font-family:Arial,Helvetica,system}.uvtrend{margin-left:135px;margin-top:48px;z-index:1;color:#fff}.simsekcontainer{float:left;font-family:weathertext,system;-o-font-smoothing:antialiasedleft:0;bottom:0;right:0;position:relative;margin:40px 10px 10px 40px;left:-10px;top:13px}.simsek{font-size:1.55rem;padding-top:12px;color:#f8f8f8;background:rgba(230,161,65,1);border-bottom:18px solid rgba(56,56,60,1);align-items:center;justify-content:center;border-radius:3px}
+smalluvunit{font-size:.9rem;font-family:Arial,Helvetica,system;}
+
+
+
 </style>
 </head>
 <body>
@@ -32,19 +41,19 @@ windgusts{position:absolute;font-size:15px;margin-top:20px;left:50px;color:#444}
             <div class="weather34card_weather34-wrapper"><span class="weather34card__count-text--big">
               <?php
 	// UV INDEX
-	if ($weather["uvdmax"]>10)  {
-	echo "<purple>",$weather["uvdmax"] . "</value>";} 	
-	else if ($weather["uvdmax"]>8)  {
-	echo "<red>",$weather["uvdmax"] . "</value>";}
-	else if ($weather["uvdmax"]>5)  {
-	echo "<orange>",$weather["uvdmax"] . "</value>";}
-	else if ($weather["uvdmax"]>3)  {
-	echo "<yellow>",$weather["uvdmax"] . "</value>";} 		
+	if ($weather["uvdmax"]>=10)  {
+	echo "<div class='uvtoday11'>",$weather["uvdmax"] . "</value>";} 	
+	else if ($weather["uvdmax"]>=8)  {
+	echo "<div class='uvtoday9-10'>",$weather["uvdmax"] . "</value>";}
+	else if ($weather["uvdmax"]>=5)  {
+	echo "<div class='uvtoday6-8'>",$weather["uvdmax"] . "</value>";}
+	else if ($weather["uvdmax"]>=3)  {
+	echo "<div class='uvtoday4-5'>",$weather["uvdmax"] . "</value>";} 		
 	else if ($weather["uvdmax"]>=-0) {
-	echo "<green>",$weather["uvdmax"] . "</value>";}		
-	echo "<sup><unit> UVI</sup> </span>"
+	echo "<div class='uvtoday1'>",$weather["uvdmax"] . "</value>";}		
+	echo "<smalluvunit> UVI</smalluvunit>"
 ?>
-
+</div>
 
 
 
@@ -131,20 +140,23 @@ windgusts{position:absolute;font-size:15px;margin-top:20px;left:50px;color:#444}
             
             
               <?php
-	// UV INDEX
-	if ($weather["uvmmax"]>10)  {
-	echo "<purple>",$weather["uvmmax"] . "</value>";} 	
-	else if ($weather["uvmmax"]>8)  {
-	echo "<red>",$weather["uvmmax"] . "</value>";}
-	else if ($weather["uvmmax"]>5)  {
-	echo "<orange>",$weather["uvmmax"] . "</value>";}
-	else if ($weather["uvmmax"]>3)  {
-	echo "<yellow>",$weather["uvmmax"] . "</value>";} 		
+			  
+			  
+			  // UV INDEX
+	if ($weather["uvmmax"]>=10)  {
+	echo "<div class='uvtoday11'>",$weather["uvmmax"] . "</value>";} 	
+	else if ($weather["uvmmax"]>=8)  {
+	echo "<div class='uvtoday9-10'>",$weather["uvmmax"] . "</value>";}
+	else if ($weather["uvmmax"]>=5)  {
+	echo "<div class='uvtoday6-8'>",$weather["uvmmax"] . "</value>";}
+	else if ($weather["uvmmax"]>=3)  {
+	echo "<div class='uvtoday4-5'>",$weather["uvmmax"] . "</value>";} 		
 	else if ($weather["uvmmax"]>=-0) {
-	echo "<green>",$weather["uvmmax"] . "</value>";}		
-	echo "<sup><unit> UVI</sup> </span>"
+	echo "<div class='uvtoday1'>",$weather["uvmmax"] . "</value>";}		
+	echo "<smalluvunit> UVI</smalluvunit>"
+			
 ?>
-
+</div>
 
 </span>  <div class="higust">Highest UV-INDEX <span><?php echo $weather["uvmmaxtime"];?></span></div>
 <br>
@@ -193,21 +205,24 @@ windgusts{position:absolute;font-size:15px;margin-top:20px;left:50px;color:#444}
             
             
             
-             <?php
-	// UV INDEX
-	if ($weather["uvydmax"]>10)  {
-	echo "<purple>",$weather["uvydmax"] . "</value>";} 	
-	else if ($weather["uvydmax"]>8)  {
-	echo "<red>",$weather["uvydmax"] . "</value>";}
-	else if ($weather["uvydmax"]>5)  {
-	echo "<orange>",$weather["uvydmax"] . "</value>";}
-	else if ($weather["uvydmax"]>3)  {
-	echo "<yellow>",$weather["uvydmax"] . "</value>";} 		
+            <?php
+			  
+			  
+			  // UV INDEX
+	if ($weather["uvydmax"]>=10)  {
+	echo "<div class='uvtoday11'>",$weather["uvydmax"] . "</value>";} 	
+	else if ($weather["uvydmax"]>=8)  {
+	echo "<div class='uvtoday9-10'>",$weather["uvydmax"] . "</value>";}
+	else if ($weather["uvydmax"]>=5)  {
+	echo "<div class='uvtoday6-8'>",$weather["uvydmax"] . "</value>";}
+	else if ($weather["uvydmax"]>=3)  {
+	echo "<div class='uvtoday4-5'>",$weather["uvydmax"] . "</value>";} 		
 	else if ($weather["uvydmax"]>=-0) {
-	echo "<green>",$weather["uvydmax"] . "</value>";}		
-	echo "<sup><unit> UVI</sup> </span>"
+	echo "<div class='uvtoday1'>",$weather["uvydmax"] . "</value>";}		
+	echo "<smalluvunit> UVI</smalluvunit>"
+			
 ?>
-
+</div>
 
 </span> <div class="higust">Highest UV-INDEX Measured  at <span><?php echo $weather["uvydmaxtime"];?></span></div>
 <br>
@@ -248,22 +263,24 @@ windgusts{position:absolute;font-size:15px;margin-top:20px;left:50px;color:#444}
 	
  
             
-            
-         <?php
-	// UV INDEX year
-	if ($weather["uvymax"]>10)  {
-	echo "<purple>",$weather["uvymax"] . "</value>";} 	
-	else if ($weather["uvymax"]>8)  {
-	echo "<red>",$weather["uvymax"] . "</value>";}
-	else if ($weather["uvymax"]>5)  {
-	echo "<orange>",$weather["uvymax"] . "</value>";}
-	else if ($weather["uvymax"]>3)  {
-	echo "<yellow>",$weather["uvymax"] . "</value>";} 		
+         
+              <?php
+			  
+			  
+			  // UV INDEX
+	if ($weather["uvymax"]>=10)  {
+	echo "<div class='uvtoday11'>",$weather["uvymax"] . "</value>";} 	
+	else if ($weather["uvymax"]>=8)  {
+	echo "<div class='uvtoday9-10'>",$weather["uvymax"] . "</value>";}
+	else if ($weather["uvymax"]>=5)  {
+	echo "<div class='uvtoday6-8'>",$weather["uvymax"] . "</value>";}
+	else if ($weather["uvymax"]>=3)  {
+	echo "<div class='uvtoday4-5'>",$weather["uvymax"] . "</value>";} 		
 	else if ($weather["uvymax"]>=-0) {
-	echo "<green>",$weather["uvymax"] . "</value>";}		
-	echo "<sup><unit> UVI</sup> </span>"
-?>
-
+	echo "<div class='uvtoday1'>",$weather["uvymax"] . "</value>";}		
+	echo "<smalluvunit> UVI</smalluvunit>"
+			
+?></div>
 
 </span> <div class="higust">Highest UV-INDEX <span><?php echo $weather["uvymaxtime"];?></span></div>
 <br>
