@@ -72,6 +72,7 @@ include_once('livedata.php');include_once('common.php');include_once('settings1.
 <div class="weather-item"><div class="chartforecast">
 <span class="yearpopup"> <a alt="forecast summary" title="forecast summary" href="outlookds.php" data-featherlight="iframe"><?php echo $chartinfo?> <?php echo $lang['Forecastsummary'];?></a></span>
 <span class="yearpopup">  <a alt="hourly forecast" title="hourly forecast windspeed" href="forecastdshour.php" data-featherlight="iframe" ><?php echo $chartinfo?> <?php echo $lang['Hourlyforecast']; ?></a></span>
+<span class="yearpopup"> <a alt="radar" title="radar" href="radar1.php" data-featherlight="iframe"><?php echo $chartinfo?> <?php echo 'Radar';?> </a></span>
       </div>
   <span class='moduletitle'>
     <?php echo $lang['Forecast'];?>  </span><br />
@@ -176,8 +177,9 @@ else echo '<br><br><a href="https://weather34.com/homeweatherstation/" title="ht
 
 <div class=footertext>
 <?php echo $info?>Source:<?php echo $mbplatform;?> (<?php echo $weather["swversion"];echo "-",$weather["version"]." Template:&nbsp;<oblue>".$templateversion?></oblue>)&nbsp;
-<?php echo $info;?>Hardware:&nbsp;<?php echo $weatherhardware;?><br><?php echo $info;?> Maintained by <a href="mailto:steepleian@gmail.com">Steepleian <a href="https://github.com/steepleian/WX-HWS" title="https://github.com/steepleian/WX-HWS">
-at Github &nbsp; <img src="img/flags/<?php echo $flag ;?>.svg" width="20px" ><?php 
+<?php echo $info;?>Hardware:&nbsp;<?php echo $weatherhardware;?><br><?php echo $info;?> Maintained by <a href="mailto:steepleian@gmail.com">Steepleian <a href="https://github.com/steepleian/WX-HWS-master" title="https://github.com/steepleian/WX-HWS-master">
+  at Github &nbsp; <img src="img/flags/<?php echo $flag ;?>.svg" width="20px" ><a href="https://www.steepleclaydonparishcouncil.gov.uk/" title="https://www.steepleclaydonparishcouncil.gov.uk/">
+  <?php 
 if (isset($personalmessage) and trim($personalmessage) <> '') {echo '<br />'.$personalmessage;}
 ?></div></div></div>
 <div id=lightningalert></div></body><?php include('updater.php');include('menu.php')?></html>
