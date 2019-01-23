@@ -33,7 +33,7 @@ $dewpointconv='parseFloat(rowData[2]';$windconv = "0.621371";$rainfallconv='10';
 if ($uk == true & $units == 'uk' ) {
 	
 $pressureconv='1';$temperatureconvhi='parseFloat(rowData[1]';$temperatureconvlo='parseFloat(rowData[3]';$temperatureconv='parseFloat(rowData[1]';
-$dewpointconv='parseFloat(rowData[2]';$windconv = "0.621371";$rainfallconv='1';$pressureinterval= "0.5";  $rainfallconvmm='10';
+$dewpointconv='parseFloat(rowData[2]';$windconv = "0.621371";$rainfallconv='1';$pressureinterval= "0.5";  $rainfallconvmm='10'; $pressureunit='hPa';
 }
 
 
