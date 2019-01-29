@@ -22,6 +22,7 @@ curl_close ($ch5);}
 if(file_exists('darksky.txt')&&time()- filemtime('darksky.txt')>3600){
 // weather34 darksky  curl based
 $url4 = 'https://api.forecast.io/forecast/'.$apikey.'/'.$lat.','.$lon.'?lang='.$language.'&units='.$darkskyunit ;
+//$url4 = 'https://api.forecast.io/forecast/459769240c57b952f4c080b82f40dac7/46.981757,14.206015';  
 $ch4 = curl_init($url4);
 $filename4 = 'darksky.txt';
 $complete_save_loc4 = $filename4; 
