@@ -51,7 +51,7 @@ Attribution-NonCommercial 4.0 International based on a work at https://weather34
 
 # Non-weeWX versions Available  
 
-* **Cumulus Version** available via download and more info supported by Ken True ( https://github.com/ktrue/CU-HWS )
+* **Cumulus Version** available via download and more info supported by Ken True ( https://github.com/ktrue/CU-HWS ). This version now also supports WeeWX and WeatherCat
 
 * **Weatherflow API Version** **Discontinued** Please use meteobridge version if you have a meteobridge product, it offers more versatile options over the API and faster updates and better history/chart outputs or alternatively try the version for Weather Display below by Wim van der Kuil
 
@@ -65,7 +65,7 @@ http://pysselilivet.blogspot.com/2017/01/install-weather34-with-weatherlink.html
 https://atmocom.com/Demo-weather-data
 
 * **Weather Display version** by Wim van der Kuil  Now Available via 
-https://wd34.weather-template.com/
+https://wd34.weather-template.com/. This version also now supports Cumulus, WeeWX and WeatherCat.
 
 ## Brian's note
 A note from Brian 2-Jan-2019 (quoted from [here](https://www.wxforum.net/index.php?topic=29817.msg366998#msg366998)):
