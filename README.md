@@ -8,6 +8,10 @@ and is only supporting Meteobridge/Meteobridge NANO-SD versions of the HWS templ
 This version requires weeWX software with the CRT extension for data feeds for the conditions 
 from your personal weather station.  weeWX is available at http://weewx.com
 
+This version is designed explicitly to harness the WeeWX database to generate the weather data charts. It is a specially modified version of CU-HWS maintained by Ken True (https://github.com/ktrue/CU-HWS)
+
+If you are happy to use Weather Underground as a source of data for chart generation you are strongly recommended to use the Ken True CU-HWS version or the version maintained by Wim van der Kuil (https://wd34.weather-template.com/) both of which can be configured out-of-the-box to be used with WeeWX.
+
 # Demo
 
 A live example of this template can be seen at https://claydonsweather.org.uk
