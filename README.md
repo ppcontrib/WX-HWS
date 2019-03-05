@@ -1,11 +1,11 @@
-# Home Weather Station weather website template for weeWX
+# Home Weather Station weather website template for WeeWX
 
 This repository contains the current version of Brian Underdown's Home Weather Station weather website template set.
 Brian's main website is https://weather34.com/homeweatherstation/index.html
 In January, 2019, Brian has asked others to distribute/maintain his code for other weather station software,
 and is only supporting Meteobridge/Meteobridge NANO-SD versions of the HWS template.
 
-This version requires weeWX software with the CRT extension for data feeds for the conditions 
+This version requires WeeWX software with the CRT extension for data feeds for the conditions 
 from your personal weather station.  weeWX is available at http://weewx.com
 
 This version is designed explicitly to harness the WeeWX database to generate the weather data charts. It is a specially modified version of CU-HWS maintained by Ken True (https://github.com/ktrue/CU-HWS)
