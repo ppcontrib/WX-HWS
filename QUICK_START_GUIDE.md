@@ -1,6 +1,10 @@
 ﻿# Setup Guide
 
-This quick start guide assumes that you are already reasonably familiar with weeWX and that it is already installed on your computer along with a webserver, php and curl. For a light-touch webserver, Lighttpd is a good choice. A good guide for installing PHP 7.0 and Lighttpd on a RaspberryPi can be found at https://pimylifeup.com/raspberry-pi-lighttpd/  
+This quick start guide assumes that you are already reasonably familiar with weeWX and that it is already installed on your computer along with a webserver, php and curl. For a light-touch webserver, Lighttpd is a good choice. A good guide for installing PHP 7.0 and Lighttpd on a RaspberryPi can be found at https://pimylifeup.com/raspberry-pi-lighttpd/
+
+IMPORTANT. After installing PHP please make sure you install all the PHP modules appropriate for your version of PHP. Failure to due so may mean that forecasts and current conditions fail to update. This is an example for PHP7.3 modules on a Debian based distribution: -
+
+	apt-get install php7.3-pear php7.3-curl php7.3-dev php7.3-gd php7.3-mbstring php7.3-zip php7.3-mysql php7.3-xml
 
 The weewx folder must reside in the root directory of your web server. This is the default location if you followed the weeWX install process (http://www.weewx.com/docs/debian.htm) on a Debian based operating system (Debian, Ubuntu, Raspbian etc). 
 
