@@ -170,7 +170,7 @@ if ($purpleairhardware=='yes') {echo ' <a alt="air quality information" title="a
  <!--end outdoor data for homeweatherstation template-->
   <!--footer area for homeweatherstation template warning dont mess with this below this line unless you really know what you are doing-->
 <div class=weatherfooter-container><div class=weatherfooter-item> 
-<div class=hardwarelogo1><a href="http://weewx.com" target="_blank" title=""><img src="img/weewx.svg" width="125px" height="25px" alt="meteobridge"></a></div><div class=hardwarelogo2><?php 
+<div class=hardwarelogo1><a href="http://weewx.com" target="_blank" title=""><img src="img/icon-weewx.svg" width="150px" height="50px" alt="meteobridge"></a></div><div class=hardwarelogo2><?php 
 if ($davis=="Yes"){echo '<a href="https://www.davisinstruments.com/solution/vantage-pro2/" title="https://www.davisinstruments.com/solution/vantage-pro2/" target="_blank"><img src="img/designedfor.svg" width="125px" height="125px" alt="Davis Instruments&reg;" ></a>';}
 else if ($weatherhardware=='Weatherflow Air-Sky'){echo '<a href="http://weatherflow.com/" title="http://weatherflow.com/" target="_blank"><img src="img/wflogo.svg" width="100px" alt="http://weatherflow.com/" ></a>';}
 else echo '<br><br><a href="https://weather34.com/homeweatherstation/" title="https://weather34.com/homeweatherstation/" target="_blank"><img src="img/weather34logo.svg" width="40px" alt="https://weather34.com/homeweatherstation/" class="homeweatherstationlogo" ></a>';?> </div>
