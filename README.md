@@ -10,7 +10,7 @@ from your personal weather station.  weeWX is available at http://weewx.com
 
 This version is designed explicitly to harness the WeeWX database to generate the weather data charts. It is a specially modified version of CU-HWS maintained by Ken True (https://github.com/ktrue/CU-HWS)
 
-If you are happy to use Weather Underground as a source of data for chart generation you are strongly recommended to use the Ken True CU-HWS version which can be configured out-of-the-box to be used with WeeWX.
+If you are happy to use Weather Underground as a source of data for chart generation you are strongly recommended to use the Ken True CU-HWS version (https://github.com/ktrue/CU-HWS) as your first choice which can be configured out-of-the-box to be used with WeeWX.
 
 # Demo
 
